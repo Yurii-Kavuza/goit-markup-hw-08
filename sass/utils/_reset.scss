@@ -1,0 +1,48 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.03em;
+	background-color: var(--primary-text-color-light);
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.text--aligned-center {
+	text-align: center;
+}
