@@ -1,10 +1,13 @@
 .our-characteristics {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	// padding-top: 94px;
+	// padding-bottom: 94px;
+
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .our-characteristics__list {
-	display: flex;
+	//display: flex;
 
 	font-size: 14px;
 }
@@ -30,16 +33,21 @@
 }
 
 .our-characteristics__item {
-	flex-basis: calc((100% - 90px) / 4);
+	// flex-basis: calc((100% - 90px) / 4);
+
+	// &:not(:last-child) {
+	// 	margin-right: 30px;
+	// }
 
 	&:not(:last-child) {
-		margin-right: 30px;
+		margin-bottom: 30px;
 	}
 }
 
 .our-characteristics__title {
 	margin-bottom: 10px;
 
+	text-align: center;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1.14;
