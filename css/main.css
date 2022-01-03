@@ -103,7 +103,17 @@ img {
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -246,8 +256,6 @@ img {
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
   color: var(--primary-text-color-light);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
@@ -255,17 +263,45 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-width: 320px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
-  width: 60%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  .hero__title {
+    width: 80%;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 60%;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .section__title {
@@ -322,9 +358,22 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .our-characteristics {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .our-characteristics__list {
   font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  .our-characteristics__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
 }
 
 .our-characteristics__wrapper {
@@ -349,6 +398,23 @@ img {
 .our-characteristics__item:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .our-characteristics__item {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+  .our-characteristics__item:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-characteristics__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .our-characteristics__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 .our-characteristics__title {
   margin-bottom: 10px;
@@ -359,6 +425,11 @@ img {
   text-transform: uppercase;
   color: var(--primary-header-color);
 }
+@media screen and (min-width: 768px) {
+  .our-characteristics__title {
+    text-align: left;
+  }
+}
 
 .our-characteristics__description {
   line-height: 1.71;
@@ -366,7 +437,13 @@ img {
 }
 
 .what-we-do {
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
 
 .what-we-do__list {
@@ -400,24 +477,49 @@ img {
 }
 
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--icon-backrgound-color-features);
 }
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-.our-team__list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
 }
 
 .our-team__member {
-  flex-basis: calc((100% - 90px) / 4);
-  margin-right: 30px;
   background-color: var(--primary-text-color-light);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.our-team__member:last-child {
-  margin-right: 0;
+.our-team__member:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .our-team__member {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-bottom: 30px;
+  }
+  .our-team__member:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__member {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .our-team__member:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-member__info {
