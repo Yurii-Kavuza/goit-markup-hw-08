@@ -9,12 +9,13 @@
 }
 
 .our-characteristics__list {
+	margin: -15px;
+
 	font-size: 14px;
 
 	@media screen and (min-width: 768px) {
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: -30px;
 	}
 }
 
@@ -39,21 +40,14 @@
 }
 
 .our-characteristics__item {
-	@media screen and (min-width: 768px) {
-		flex-basis: calc((100% - 30px) / 2);
-		margin-bottom: 30px;
+	margin: 15px;
 
-		&:not(:nth-child(2n)) {
-			margin-right: 30px;
-		}
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 2 * 30px) / 2);
 	}
 
 	@media screen and (min-width: 1200px) {
-		flex-basis: calc((100% - 90px) / 4);
-
-		&:not(:last-child) {
-			margin-right: 30px;
-		}
+		flex-basis: calc((100% - 4 * 30px) / 4);
 	}
 }
 
