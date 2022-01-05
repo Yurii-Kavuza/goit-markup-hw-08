@@ -1,11 +1,32 @@
 .categories {
 	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 25px;
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+		margin-bottom: 36px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
 }
 
-.categories__item:not(:last-child) {
+.categories__item {
 	margin-right: 8px;
+	margin-bottom: 15px;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 0;
+	}
+
+	&:last-child {
+		@media screen and (min-width: 768px) {
+			margin-right: 0;
+		}
+	}
 }
 
 .categories__btn {

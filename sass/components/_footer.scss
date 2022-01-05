@@ -8,7 +8,9 @@
 .footer__container {
 	@media screen and (min-width: 768px) {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: baseline;
+		justify-content: space-around;
 	}
 }
 
@@ -20,10 +22,28 @@
 	@media screen and (min-width: 1200px) {
 		flex-basis: calc((100% - 90px) / 4);
 		margin-right: 30px;
+
+		text-align: center;
+	}
+}
+
+.footer__first-part {
+	@media screen and (min-width: 768px) {
+		flex-basis: 232px;
+	}
+}
+
+.footer__second-part {
+	@media screen and (min-width: 768px) {
+		flex-basis: 206px;
 	}
 }
 
 .footer__third-part {
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
+
 	@media screen and (min-width: 1200px) {
 		flex-basis: calc((100% - 30px) / 2);
 	}
