@@ -1,11 +1,16 @@
 .subscribe {
-	display: flex;
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
 }
 
 .subscribe__email {
 	box-sizing: border-box;
-	flex-basis: calc(100% - 212px);
+	width: 100%;
 	padding: 14px 16px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 
 	font-family: inherit;
 	font-weight: 400;
@@ -23,13 +28,22 @@
 	-moz-border-radius: var(--main-border-radius);
 	-ms-border-radius: var(--main-border-radius);
 	-o-border-radius: var(--main-border-radius);
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc(100% - 212px);
+	}
 }
 
 .subscribe__btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 12px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (min-width: 768px) {
+		margin-left: 12px;
+	}
 }
 
 .subscribe__icon {

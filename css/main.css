@@ -123,8 +123,8 @@ img {
   padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
   color: var(--primary-active-color);
 }
@@ -133,6 +133,12 @@ img {
 }
 .logo--light {
   color: var(--primary-text-color-light);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .btn {
@@ -631,19 +637,30 @@ img {
   background-color: var(--primary-background-color);
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__first-part,
 .footer__second-part {
-  flex-basis: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__first-part,
+.footer__second-part {
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
 }
 
-.footer__third-part {
-  flex-basis: calc((100% - 30px) / 2);
+@media screen and (min-width: 1200px) {
+  .footer__third-part {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .footer__logo {
@@ -660,12 +677,23 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-text-color-light);
+}
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: left;
+  }
 }
 
 .footer__social-list {
-  justify-content: flex-start;
+  justify-content: center;
   color: var(--icon-backrgound-color);
+}
+@media screen and (min-width: 768px) {
+  .footer__social-list {
+    justify-content: flex-start;
+  }
 }
 
 .footer__social-link {
@@ -719,14 +747,19 @@ img {
   color: var(--primary-text-color-light);
 }
 
-.subscribe {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .subscribe {
+    display: flex;
+  }
 }
 
 .subscribe__email {
   box-sizing: border-box;
-  flex-basis: calc(100% - 212px);
+  width: 100%;
   padding: 14px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
@@ -742,12 +775,23 @@ img {
   -ms-border-radius: var(--main-border-radius);
   -o-border-radius: var(--main-border-radius);
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    flex-basis: calc(100% - 212px);
+  }
+}
 
 .subscribe__btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__btn {
+    margin-left: 12px;
+  }
 }
 
 .subscribe__icon {
