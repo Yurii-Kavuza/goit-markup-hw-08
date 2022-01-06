@@ -1148,7 +1148,7 @@ img {
 }
 
 .card {
-  width: 100%;
+  width: calc(100% - 30px);
   margin: 15px;
   border: 1px solid var(--card-border-color);
 }
