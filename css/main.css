@@ -843,7 +843,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: calc(100% - 30px);
   min-height: 581px;
   padding: 40px;
   background-color: var(--primary-text-color-light);
@@ -863,6 +863,11 @@ img {
   -moz-transition: transform var(--first-transition-duration) var(--first-transition-function);
   -ms-transition: transform var(--first-transition-duration) var(--first-transition-function);
   -o-transition: transform var(--first-transition-duration) var(--first-transition-function);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__callback {
