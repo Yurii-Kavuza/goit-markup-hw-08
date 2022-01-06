@@ -864,6 +864,11 @@ img {
   -ms-transition: transform var(--first-transition-duration) var(--first-transition-function);
   -o-transition: transform var(--first-transition-duration) var(--first-transition-function);
 }
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
