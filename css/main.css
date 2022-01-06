@@ -883,10 +883,15 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-header-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__field {
@@ -1017,12 +1022,17 @@ img {
   top: 12px;
   left: 36px;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.17;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .policy-agreement__text {
+    line-height: 1.71;
+  }
 }
 
 .policy-agreement__icon {
