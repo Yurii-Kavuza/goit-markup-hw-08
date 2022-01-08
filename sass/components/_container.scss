@@ -17,3 +17,18 @@
 		width: 1200px;
 	}
 }
+
+.container--mobile {
+	position: relative;
+	width: 100%;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 40px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
