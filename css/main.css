@@ -20,7 +20,6 @@
   --main-border-radius: 4px;
   --first-transition-function: cubic-bezier(0.4, 0, 0.2, 1);
   --first-transition-duration: 250ms;
-  --first-transition-duration-2: 1000ms;
 }
 
 html {
@@ -915,11 +914,11 @@ img {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--first-transition-duration-2) var(--first-transition-function), visibility var(--first-transition-function-2) var(--first-transition-function);
-  -webkit-transition: opacity var(--first-transition-duration-2) var(--first-transition-function), visibility var(--first-transition-function-2) var(--first-transition-function);
-  -moz-transition: opacity var(--first-transition-duration-2) var(--first-transition-function), visibility var(--first-transition-function-2) var(--first-transition-function);
-  -ms-transition: opacity var(--first-transition-duration-2) var(--first-transition-function), visibility var(--first-transition-function-2) var(--first-transition-function);
-  -o-transition: opacity var(--first-transition-duration-2) var(--first-transition-function), visibility var(--first-transition-function-2) var(--first-transition-function);
+  transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-function) var(--first-transition-function);
+  -webkit-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-function) var(--first-transition-function);
+  -moz-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-function) var(--first-transition-function);
+  -ms-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-function) var(--first-transition-function);
+  -o-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-function) var(--first-transition-function);
 }
 
 .backdrop.is-hidden .modal {
@@ -1191,12 +1190,6 @@ img {
   height: 100vh;
   z-index: 9999;
   background: var(--primary-text-color-light);
-  opacity: 1;
-  transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-  -webkit-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-  -moz-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-  -ms-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-  -o-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
 }
 @media screen and (min-width: 768px) {
   .mob-menu {

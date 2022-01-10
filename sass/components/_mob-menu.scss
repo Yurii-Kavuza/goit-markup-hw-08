@@ -5,16 +5,10 @@
 	height: 100vh;
 	z-index: 9999;
 	background: var(--primary-text-color-light);
-	opacity: 1;
 
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
-	transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-	-webkit-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-	-moz-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-	-ms-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
-	-o-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
 }
 
 .menu__open {
