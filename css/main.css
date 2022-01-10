@@ -1113,7 +1113,7 @@ img {
   position: absolute;
   top: 12px;
   left: 36px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -1123,6 +1123,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .policy-agreement__text {
+    font-size: 14px;
     line-height: 1.71;
   }
 }
