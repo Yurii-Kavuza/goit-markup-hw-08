@@ -88,11 +88,11 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity var(--first-transition-duration-2) var(--first-transition-function) visibility var(--first-transition-duration-2) var(--first-transition-function);
-  -webkit-transition: opacity var(--first-transition-duration-2) var(--first-transition-function) visibility var(--first-transition-duration-2) var(--first-transition-function);
-  -moz-transition: opacity var(--first-transition-duration-2) var(--first-transition-function) visibility var(--first-transition-duration-2) var(--first-transition-function);
-  -ms-transition: opacity var(--first-transition-duration-2) var(--first-transition-function) visibility var(--first-transition-duration-2) var(--first-transition-function);
-  -o-transition: opacity var(--first-transition-duration-2) var(--first-transition-function) visibility var(--first-transition-duration-2) var(--first-transition-function);
+  transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-duration) var(--first-transition-function);
+  -webkit-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-duration) var(--first-transition-function);
+  -moz-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-duration) var(--first-transition-function);
+  -ms-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-duration) var(--first-transition-function);
+  -o-transition: opacity var(--first-transition-duration) var(--first-transition-function), visibility var(--first-transition-duration) var(--first-transition-function);
 }
 
 .container {
