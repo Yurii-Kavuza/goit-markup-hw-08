@@ -4,12 +4,17 @@
 	width: 100vw;
 	height: 100vh;
 	z-index: 9999;
-
 	background: var(--primary-text-color-light);
+	opacity: 1;
 
 	@media screen and (min-width: 768px) {
 		display: none;
 	}
+	transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
+	-webkit-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
+	-moz-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
+	-ms-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
+	-o-transition: opacity var(--first-transition-duration-2) var(--first-transition-function);
 }
 
 .menu__open {
@@ -30,8 +35,8 @@
 
 .menu__icon-open,
 .menu__icon-close {
-	width: 100%;
-	height: auto;
+	width: 40px;
+	height: 40px;
 	fill: var(--secondary-logo-color);
 	transition: fill var(--first-transition-duration) var(--first-transition-function);
 	-webkit-transition: fill var(--first-transition-duration) var(--first-transition-function);
@@ -66,6 +71,10 @@
 	// }
 }
 
+.mob-nav {
+	margin-bottom: auto;
+}
+
 .mob-nav__item {
 	font-style: normal;
 	font-weight: 500;
@@ -93,7 +102,6 @@
 }
 
 .mob-contacts {
-	margin-top: auto;
 	margin-bottom: 64px;
 }
 
@@ -110,8 +118,8 @@
 	&--phone {
 		margin-bottom: 32px;
 
-		font-size: 30px;
-		line-height: calc(40 / 30);
+		font-size: 26px;
+		line-height: calc(40 / 26);
 		color: var(--primary-active-color);
 
 		@media screen and (min-width: 480px) {

@@ -5,16 +5,16 @@
 	height: 100vh;
 	width: 100vw;
 	background-color: rgba(0, 0, 0, 0.2);
-	transition: opacity var(--first-transition-duration) var(--first-transition-function),
-		visibility var(--first-transition-function) var(--first-transition-function);
-	-webkit-transition: opacity var(--first-transition-duration) var(--first-transition-function),
-		visibility var(--first-transition-function) var(--first-transition-function);
-	-moz-transition: opacity var(--first-transition-duration) var(--first-transition-function),
-		visibility var(--first-transition-function) var(--first-transition-function);
-	-ms-transition: opacity var(--first-transition-duration) var(--first-transition-function),
-		visibility var(--first-transition-function) var(--first-transition-function);
-	-o-transition: opacity var(--first-transition-duration) var(--first-transition-function),
-		visibility var(--first-transition-function) var(--first-transition-function);
+	transition: opacity var(--first-transition-duration-2) var(--first-transition-function),
+		visibility var(--first-transition-function-2) var(--first-transition-function);
+	-webkit-transition: opacity var(--first-transition-duration-2) var(--first-transition-function),
+		visibility var(--first-transition-function-2) var(--first-transition-function);
+	-moz-transition: opacity var(--first-transition-duration-2) var(--first-transition-function),
+		visibility var(--first-transition-function-2) var(--first-transition-function);
+	-ms-transition: opacity var(--first-transition-duration-2) var(--first-transition-function),
+		visibility var(--first-transition-function-2) var(--first-transition-function);
+	-o-transition: opacity var(--first-transition-duration-2) var(--first-transition-function),
+		visibility var(--first-transition-function-2) var(--first-transition-function);
 }
 
 .backdrop.is-hidden .modal {
