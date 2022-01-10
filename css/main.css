@@ -336,10 +336,11 @@ img {
 }
 
 .hero {
-  max-width: 1600px;
   margin: 0 auto;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
   text-align: center;
   color: var(--primary-text-color-light);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
@@ -362,8 +363,17 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-2x.jpg);
   }
 }
+@media screen and (min-width: 480px) {
+  .hero {
+    display: block;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: auto;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
