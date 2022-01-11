@@ -1424,7 +1424,9 @@ img {
 }
 
 .card__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow var(--first-transition-duration) var(--first-transition-duration);
   -webkit-transition: box-shadow var(--first-transition-duration) var(--first-transition-duration);
   -moz-transition: box-shadow var(--first-transition-duration) var(--first-transition-duration);
@@ -1492,4 +1494,5 @@ img {
 
 .card__info {
   padding: 20px 24px;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */
