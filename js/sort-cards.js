@@ -31,9 +31,7 @@ function onCategoriesClick(e) {
     }
    
     const sortedEls = showElements(cards, currentTagValue);
-    renderMarkup(sortedEls);
-    
-    
+    renderMarkup(sortedEls);   
 }
 
 function showElements(elements, value) {
